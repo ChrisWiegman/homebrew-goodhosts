@@ -10,16 +10,16 @@ class Goodhosts < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ChrisWiegman/goodhosts/releases/download/4.1.0/goodhosts_4.1.0_macos_arm64.zip"
-      sha256 "ccfecb496a445821019f41fbce5f0d9ae24814669da0f12c6dc3f82f2d834865"
+      url "https://github.com/ChrisWiegman/goodhosts/releases/download/v4.1.0/goodhosts_4.1.0_macos_arm64.zip"
+      sha256 "3e81adeaf1685f39999dc2ab193dbd9db16e0d8f59d62f1bbcc5d9d4f511109b"
 
       def install
         bin.install "goodhosts"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ChrisWiegman/goodhosts/releases/download/4.1.0/goodhosts_4.1.0_macos_x86_64.zip"
-      sha256 "f5196ed558af4ee4640b5e1c8fec86857285dbf3367f4e51c2f78f338126e9a8"
+      url "https://github.com/ChrisWiegman/goodhosts/releases/download/v4.1.0/goodhosts_4.1.0_macos_x86_64.zip"
+      sha256 "645710f6751db59c32736aad63573c988033b9d5d2dc185e28a2e1b2c904dc4d"
 
       def install
         bin.install "goodhosts"
@@ -29,8 +29,8 @@ class Goodhosts < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ChrisWiegman/goodhosts/releases/download/4.1.0/goodhosts_4.1.0_linux_x86_64.zip"
-      sha256 "7d433367100dd5d76e5bcb35714cc12308111db09a3e790a8ba2a1c4151e25e6"
+      url "https://github.com/ChrisWiegman/goodhosts/releases/download/v4.1.0/goodhosts_4.1.0_linux_x86_64.zip"
+      sha256 "f6b7601ebf1f85dd7a5421767bb511a238171c1788d405190188edf7a00dec13"
 
       def install
         bin.install "goodhosts"
