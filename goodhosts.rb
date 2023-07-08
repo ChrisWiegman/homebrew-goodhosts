@@ -5,21 +5,21 @@
 class Goodhosts < Formula
   desc "A utility for editing your hosts file with single entries or blocks of entries."
   homepage "https://github.com/ChrisWiegman/goodhosts"
-  version "4.1.0"
+  version "4.1.1"
   license "MIT license"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/ChrisWiegman/goodhosts/releases/download/v4.1.0/goodhosts_4.1.0_macos_arm64.zip"
-      sha256 "3e81adeaf1685f39999dc2ab193dbd9db16e0d8f59d62f1bbcc5d9d4f511109b"
+    if Hardware::CPU.intel?
+      url "https://github.com/ChrisWiegman/goodhosts/releases/download/v4.1.1/goodhosts_macos_x86_64.zip"
+      sha256 "33324b1a629618c9281a99853c2c8cbbf231c05cfa7a387a62de59a008d04825"
 
       def install
         bin.install "goodhosts"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ChrisWiegman/goodhosts/releases/download/v4.1.0/goodhosts_4.1.0_macos_x86_64.zip"
-      sha256 "645710f6751db59c32736aad63573c988033b9d5d2dc185e28a2e1b2c904dc4d"
+    if Hardware::CPU.arm?
+      url "https://github.com/ChrisWiegman/goodhosts/releases/download/v4.1.1/goodhosts_macos_arm64.zip"
+      sha256 "9ed3bc0f19d9f05707f75a896b252967a57249ca474d2b31f3a4ba178db55035"
 
       def install
         bin.install "goodhosts"
@@ -29,8 +29,8 @@ class Goodhosts < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ChrisWiegman/goodhosts/releases/download/v4.1.0/goodhosts_4.1.0_linux_x86_64.zip"
-      sha256 "f6b7601ebf1f85dd7a5421767bb511a238171c1788d405190188edf7a00dec13"
+      url "https://github.com/ChrisWiegman/goodhosts/releases/download/v4.1.1/goodhosts_linux_x86_64.zip"
+      sha256 "6832a0d1910e4a2e605e954ba823a3b6ce5855d69c74fda37f849d8ecc9bf581"
 
       def install
         bin.install "goodhosts"
